@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+   <com.robinhood.ticker.TickerView
+       android:id="@+id/tickerView"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="0"
+       android:textColor="@android:color/holo_blue_dark"
+       android:layout_centerInParent="true"
+       android:textSize="80sp"/>
+
+   <!-- <Button
+        android:id="@+id/clickbtn"
+        android:layout_below="@+id/tickerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click me"/>-->
+
+    <ru.katso.livebutton.LiveButton
+        android:layout_margin="16dp"
+        android:id="@+id/clickbtn"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:text="Click me"
+        android:layout_below="@+id/tickerView"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        app:corners="4dp"
+        app:normalHeight="6dp"
+        app:pressedHeight="2dp"
+        app:backgroundColor="#266f74"
+        app:shadowColor="#1b4d2e"/>
+</RelativeLayout>
